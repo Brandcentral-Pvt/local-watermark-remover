@@ -1,0 +1,12 @@
+# Watermark Remover — local app dependencies
+# Install:  python -m pip install -r requirements.txt
+gradio>=4.44,<6
+onnxruntime>=1.17
+opencv-python>=4.8
+numpy>=1.24
+imageio-ffmpeg>=0.4.9          # ships a static ffmpeg binary: no system install needed
+pillow>=10.0
+
+# --- optional, for GPU (NVIDIA) -----------------------------------------------
+# Install this INSTEAD of onnxruntime (they conflict), then set device = cuda:
+# onnxruntime-gpu>=1.17

@@ -1,0 +1,15 @@
+# Normalise text files in the repository, so the checkout is identical on every platform.
+* text=auto eol=lf
+
+# These two must keep their native line endings to stay executable on Windows/Unix.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sh  text eol=lf
+
+# Binary assets -- never touch.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.onnx binary
+*.zip binary
+*.ipynb text eol=lf

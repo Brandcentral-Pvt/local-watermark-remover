@@ -1,0 +1,43 @@
+# --- the inpainting model is downloaded on first run (208 MB, Apache-2.0, not ours to host)
+local_app/models/
+*.onnx
+
+# --- local virtualenv
+.venv/
+venv/
+env/
+
+# --- results the app produces at runtime
+local_app/output/
+output/
+
+# --- runtime logs
+local_app/logs/
+logs/
+
+# --- python bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- proof screenshots and sample renders of real people (kept local, not published)
+demo/
+
+# --- notebook / editor cruft
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+
+# --- OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- local scratch, not part of the project
+*.tmp
+*.bak
+*.log

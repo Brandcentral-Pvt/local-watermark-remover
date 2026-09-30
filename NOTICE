@@ -1,0 +1,20 @@
+local-watermark-remover
+Copyright 2026 Brandcentral-Pvt
+
+This product includes software developed as part of the LaMa project.
+
+  LaMa: Resolution-robust Large Mask Inpainting
+  https://github.com/advimman/lama
+  Licensed under the Apache License, Version 2.0
+
+The inpainting engine in `wm_core.py` uses a LaMa model exported to ONNX, obtained from:
+
+  https://huggingface.co/Carve/LaMa-ONNX
+
+The model weights (`lama_fp32.onnx`, ~198 MB) are NOT distributed with this repository.
+They are downloaded on first run, or on demand from the Settings tab / `--download`.
+The ONNX export and its weights remain under the Apache License, Version 2.0, and the
+full licence text is in the LICENSE file at the root of this repository.
+
+`ffmpeg` is not distributed either: it is installed automatically as a Python wheel
+(`imageio-ffmpeg`) which bundles a static LGPL/GPL build.
